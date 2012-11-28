@@ -80,17 +80,43 @@ The cell positions &amp; network connections in memory reflect the instances in 
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter"/>
+    </void>
+    <void method="add">
+     <object class="ucl.physiol.neuroconstruct.project.packing.SinglePositionedCellPackingAdapter">
+      <void property="parameterList">
+       <void index="0">
+        <void property="value">
+         <float>200.0</float>
+        </void>
+       </void>
+      </void>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Cell Type</string>
     <void method="add">
      <string>Figure4B1</string>
     </void>
+    <void method="add">
+     <string>Figure4B2</string>
+    </void>
+    <void method="add">
+     <string>Figure4B3</string>
+    </void>
    </void>
    <void method="get">
     <string>Priority</string>
     <void method="add">
      <int>10</int>
+    </void>
+    <void method="add">
+     <int>9</int>
+    </void>
+    <void method="add">
+     <int>8</int>
     </void>
    </void>
    <void method="get">
@@ -103,9 +129,31 @@ The cell positions &amp; network connections in memory reflect the instances in 
       <int>255</int>
      </object>
     </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>144</int>
+      <int>155</int>
+      <int>66</int>
+      <int>255</int>
+     </object>
+    </void>
+    <void method="add">
+     <object class="java.awt.Color">
+      <int>113</int>
+      <int>174</int>
+      <int>74</int>
+      <int>255</int>
+     </object>
+    </void>
    </void>
    <void method="get">
     <string>Region Name</string>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
+    <void method="add">
+     <string>Regions_1</string>
+    </void>
     <void method="add">
      <string>Regions_1</string>
     </void>
@@ -114,6 +162,12 @@ The cell positions &amp; network connections in memory reflect the instances in 
     <string>Cell Group Name</string>
     <void method="add">
      <string>F4B1</string>
+    </void>
+    <void method="add">
+     <string>F4B2</string>
+    </void>
+    <void method="add">
+     <string>F4B3</string>
     </void>
    </void>
   </void>
@@ -142,6 +196,62 @@ The cell positions &amp; network connections in memory reflect the instances in 
      </void>
      <void property="plotReference">
       <string>F4B1_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>F4B2</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>F4B2_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>F4B2_v</string>
+     </void>
+     <void property="segmentId">
+      <string>0</string>
+     </void>
+    </object>
+   </void>
+   <void method="add">
+    <object class="ucl.physiol.neuroconstruct.project.SimPlot">
+     <void property="cellGroup">
+      <string>F4B3</string>
+     </void>
+     <void property="cellNumber">
+      <string>*</string>
+     </void>
+     <void property="graphWindow">
+      <string>F4B3_v</string>
+     </void>
+     <void property="maxValue">
+      <float>50.0</float>
+     </void>
+     <void property="minValue">
+      <float>-90.0</float>
+     </void>
+     <void property="plotAndOrSave">
+      <string>Plot and save</string>
+     </void>
+     <void property="plotReference">
+      <string>F4B3_v</string>
      </void>
      <void property="segmentId">
       <string>0</string>
@@ -223,6 +333,12 @@ The cell positions &amp; network connections in memory reflect the instances in 
       <void method="add">
        <string>F4B1</string>
       </void>
+      <void method="add">
+       <string>F4B2</string>
+      </void>
+      <void method="add">
+       <string>F4B3</string>
+      </void>
      </void>
      <void property="description">
       <string>This is the default configuration of the Cell Groups, stimulations, plots, etc for this project</string>
@@ -233,6 +349,12 @@ The cell positions &amp; network connections in memory reflect the instances in 
      <void property="plots">
       <void method="add">
        <string>F4B1_v</string>
+      </void>
+      <void method="add">
+       <string>F4B2_v</string>
+      </void>
+      <void method="add">
+       <string>F4B3_v</string>
       </void>
      </void>
      <void property="simDuration">
