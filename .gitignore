@@ -9,3 +9,4 @@ generatedPSICS
 simulations
 *.bak
 *py.class
+/neuroConstruct/generatedNeuroML2
